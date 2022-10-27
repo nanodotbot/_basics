@@ -57,6 +57,8 @@
             <a href="#classes" class="link">classes</a>
             <a href="#modules" class="link">modules</a>
             <a href="#promises" class="link">promises</a>
+            <a href="#asyncawait" class="link">async await</a>
+            <a href="#requests" class="link">requests</a>
         </nav>
         <div id="menu">
             <span class="menu-line"></span>
@@ -84,6 +86,8 @@
         <a href="#classes" class="link screen-link">classes</a>
         <a href="#modules" class="link screen-link">modules</a>
         <a href="#promises" class="link screen-link">promises</a>
+        <a href="#asyncawait" class="link screen-link">async await</a>
+        <a href="#requests" class="link screen-link">requests</a>
     </nav>
 
     <header id="header">
@@ -871,10 +875,130 @@ gato.incrementQuietschelevel();
 
         <article id="promises" class="intersection">
             <h2>promises</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-javascript/modules/javascript-promises/cheatsheet" target="_blank" rel="noopener noreferrer">promises</a>: objects that represents the eventual outcome of an asynchronous operation: pending, fullfilled, rejected (error)</p>
+<pre class="code-block"><code>const prom = new Promise((resolve, reject) => {
+    resolve('Yay!');
+});
+prom
+    .then((resolvedValue) => {
+        // console.log(resolvedValue);
+    })
+    .catch((rejectionReason) => {
+        // console.log(rejectionReason);
+    });</code></pre>
+            <script>
+                const someCondition = true;
+                const executorFunction = (resolve, reject) => {
+                    if (someCondition) {
+                        resolve('I resolved!');
+                    } else {
+                        reject('I rejected!'); 
+                    }
+                }
+                const myFirstPromise = new Promise(executorFunction);
+                // console.log(myFirstPromise);
+
+                const delayedHello = () => {
+                    // console.log('Hi! This is an asynchronous greeting!');
+                };
+                setTimeout(delayedHello, 2000);
 
 
+                const prom = new Promise((resolve, reject) => {
+                    resolve('Yay!');
+                });
+                prom
+                    .then((resolvedValue) => {
+                        // console.log(resolvedValue);
+                    })
+                    .catch((rejectionReason) => {
+                        // console.log(rejectionReason);
+                    });
+
+                // We might make one request to a database and use the data returned to us to make another request and so on!
+                const firstPromiseFunction = new Promise((resolve, reject) => {
+                    resolve('Meow');
+                });
+                const secondPromiseFunction = resolveValue => resolveValue;
+                firstPromiseFunction
+                    .then(firstResolveVal => {
+                        return secondPromiseFunction(firstResolveVal);
+                    })
+                    .then(secondResolveVal => {
+                        // console.log(secondResolveVal);
+                    });
+
+                const returnsPromOne = () => 'lalala';
+                const returnsPromTwo = () => 'dumdidum';
+                const returnsPromThree = () => 'trallala';
+                let myPromises = Promise.all([returnsPromOne, returnsPromTwo, returnsPromThree]);
+                myPromises
+                    .then((arrayOfValues) => {
+                        // console.log(arrayOfValues);
+                    })
+                    .catch((rejectionReason) => {
+                        console.log(rejectionReason);
+                    });
+            </script>
         </article>
 
+        <article id="asyncawait" class="intersection">
+            <h2>async await</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator" target="_blank" rel="noopener noreferrer">generator</a> | async functions always return a promise | the await operator returns the resolved value of a promise | handling independent promises | await Promise.all()</p>
+<pre class="code-block"><code>const tryCatch = async () => {
+    try {
+        const resolvedValue = await justAPromise;
+        console.log(resolvedValue);
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
+tryCatch();</code></pre>
+            <script>
+                const justAPromise = new Promise((resolve, reject) => resolve('🐱'));
+                const asyncFunction = async () => {
+                    const resolvedValue = await justAPromise;
+                    // console.log(resolvedValue);
+                }
+                asyncFunction();
+
+                let myPromise = () => {
+                    return new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                        resolve('Yay, I resolved!')
+                        }, 1000);
+                    });
+                }
+                async function noAwait() {
+                    let value = myPromise();
+                    // console.log(value);
+                }
+                async function yesAwait() {
+                    let value = await myPromise();
+                    // console.log(value);
+                }
+                noAwait(); // Prints: Promise { <pending> }
+                yesAwait(); // Prints: Yay, I resolved!
+
+                // error handling
+                const tryCatch = async () => {
+                    try {
+                        const resolvedValue = await justAPromise;
+                        console.log(resolvedValue);
+                    }
+                    catch (err) {
+                        console.log(err);
+                    }
+                }
+                tryCatch();
+            </script>
+        </article>
+
+        <article id="requests" class="intersection">
+            <h2>requests</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/http-requests" target="_blank" rel="noopener noreferrer">http requests</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank" rel="noopener noreferrer">http request methods</a> | <a href="https://www.codecademy.com/article/what-is-rest" target="_blank" rel="noopener noreferrer">rest</a> | <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank" rel="noopener noreferrer">http status codes</a> | <a href="https://www.codecademy.com/article/http-errors-404" target="_blank" rel="noopener noreferrer">http errors</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop" target="_blank" rel="noopener noreferrer">event loop</a> | <a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-concurrency-model-and-event-loop" target="_blank" rel="noopener noreferrer">Concurrency Model and Event Loop in JavaScript</a> </p>
+        </article>
     </main>
 
     <footer id="footer">
