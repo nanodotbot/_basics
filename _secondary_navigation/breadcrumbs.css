@@ -1,0 +1,33 @@
+.haenselandgretel,
+.breadcrumbs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+
+}
+.haenselandgretel {
+    background-color: var(--button);
+}
+.haenselandgretel > p {
+    padding: 0 .5rem;
+    margin: 0;
+
+    font-size: 2rem;
+    color: var(--text);
+}
+.haenselandgretel > a,
+.breadcrumbs > a {
+    display: grid;
+    align-content: center;
+
+    text-align: center;
+    padding: 0 .5rem;
+
+}
+.haenselandgretel > a {
+    color: var(--text);
+}
+.haenselandgretel > a:hover {
+    background-color: var(--button-secondary);
+}

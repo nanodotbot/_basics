@@ -1,0 +1,50 @@
+body > header {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    /* Foto von Pixabay: https://www.pexels.com/de-de/foto/wassertropfen-auf-grauem-textil-268819/ */
+    background-image: url('../img/pexels-pixabay-268819.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    scroll-snap-align: center;
+}
+body > header > div {
+    align-self: start;
+}
+
+body > header > h1 {
+    align-self: center;
+
+    font-size: 10vw;
+
+    color: var(--background-1);
+    padding: 0 5rem;
+    background-color: var(--rgba-background-transparent-2);
+}
+
+body > footer {
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    /* border-top: var(--border); */
+    margin-top: 1rem;
+
+    scroll-snap-align: center;
+}
+
+footer > a {
+    color: var(--primary-0);
+
+    padding-top: .5rem;
+}

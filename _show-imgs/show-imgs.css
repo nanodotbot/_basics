@@ -1,0 +1,23 @@
+.imgs-to-show:hover {
+    filter: brightness(1.1);
+}
+
+#large-img-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-1);
+}
+#large-img {
+    display: block;
+    max-height: 100vh;
+    max-width: 100vw;
+    /* border: .1rem solid var(--border); */
+}

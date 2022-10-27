@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@300&Nunito:wght@200&family=Mulish:wght@200&family=Gruppo&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/articles.css">
+    <link rel="stylesheet" href="./css/code.css">
+
+    <!-- <script src="./js/textarea.js" defer></script> -->
+
+    <link rel="stylesheet" href="./_navigation/nav.css">
+    <script src="./_navigation/nav.js" defer></script>
+
+    <link rel="stylesheet" href="./_show-imgs/show-imgs.css">
+    <script src="./_show-imgs/show-imgs.js" defer></script>
+
+    <script src="./_intersection-observer/intersection-observer.js" defer></script>
+
+    <link rel="stylesheet" href="./_boxmodel/boxmodel.css">
+
+    <link rel="stylesheet" href="./_secondary_navigation/breadcrumbs.css">
+
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+<body>
+    <div id="nav-container">
+        <nav id="links">
+            <a href="#htmlcss" class="link">html & css</a>
+            <a href="#css" class="link">css</a>
+            <a href="#flex" class="link">flex</a>
+            <a href="#navigationdesign" class="link">navigation design</a>
+            <a href="#js" class="link">js</a>
+            <a href="#variablesfunctions" class="link">variables & functions</a>
+            <a href="#functions" class="link">functions</a>
+            <a href="#conditionals" class="link">conditionals</a>
+            <a href="#scope" class="link">scope</a>
+            <a href="#hoisting" class="link">hoisting</a>
+            <a href="#typecoercion" class="link">type coercion</a>
+            <a href="#arrays" class="link">arrays</a>
+            <a href="#loops" class="link">loops</a>
+            <a href="#objects" class="link">objects</a>
+            <a href="#deconstructorloops" class="link">deconstructor & loops</a>
+            <a href="#factoryfunction" class="link">factory function</a>
+            <a href="#classes" class="link">classes</a>
+            <a href="#modules" class="link">modules</a>
+            <a href="#promises" class="link">promises</a>
+        </nav>
+        <div id="menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </div>
+    </div>
+    <nav id="nav-screen">
+        <a href="#htmlcss" class="link screen-link">html & css ref</a>
+        <a href="#css" class="link screen-link">css</a>
+        <a href="#flex" class="link screen-link">flex</a>
+        <a href="#navigationdesign" class="link screen-link">navigation design</a>
+        <a href="#js" class="link screen-link">js</a>
+        <a href="#variablesfunctions" class="link screen-link">variables & functions</a>
+        <a href="#functions" class="link screen-link">functions</a>
+        <a href="#conditionals" class="link screen-link">conditionals</a>
+        <a href="#scope" class="link screen-link">scope</a>
+        <a href="#hoisting" class="link screen-link">hoisting</a>
+        <a href="#typecoercion" class="link screen-link">type coercion</a>
+        <a href="#arrays" class="link screen-link">arrays</a>
+        <a href="#loops" class="link screen-link">loops</a>
+        <a href="#objects" class="link screen-link">objects</a>
+        <a href="#deconstructorloops" class="link screen-link">deconstructor & loops</a>
+        <a href="#factoryfunction" class="link screen-link">factory function</a>
+        <a href="#classes" class="link screen-link">classes</a>
+        <a href="#modules" class="link screen-link">modules</a>
+        <a href="#promises" class="link screen-link">promises</a>
+    </nav>
+
+    <header id="header">
+        <h1 id="function">basics</h1>
+    </header>
+
+    <main>
+        <article id="htmlcss" class="intersection">
+            <h1>html & css</h1>
+            <div>
+                <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp" target="_blank" rel="noopener noreferrer">html
+                    ref w3</a> |
+                <a href="https://www.w3schools.com/cssref/default.asp" target="_blank" rel="noopener noreferrer">css ref
+                    w3</a> |
+                <a href="https://www.codecademy.com/resources/docs/css" target="_blank" rel="noopener noreferrer">css
+                    codecademy</a>
+            </div>
+        </article>
+
+
+        <article id="css" class="intersection">
+            <h1>css</h1>
+            <h2>boxmodel</h2>
+            <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" rel="noopener noreferrer">boxmodel
+                w3</a>
+            <p>height, width, min-, max-, overflow | padding, shorthand | border, border-radius | margin, shorthand,
+                auto, <a href="https://www.w3schools.com/css/css_margin_collapse.asp" target="_blank"
+                    rel="noopener noreferrer">-collapse</a> | visibility | resetting defaults | content-box, border-box
+            </p>
+            <h2>display & position</h2>
+            <p><a href="https://www.w3schools.com/cssref/pr_class_position.asp" target="_blank"
+                    rel="noopener noreferrer">position</a> | <a
+                    href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank"
+                    rel="noopener noreferrer">display</a> | z-index | float | clear</p>
+            <h2>font, color</h2>
+            <p>font-family, -size, -weight, -style, text-transform, letter-spacing, link, @font-face | color,
+                background-color, hex, rgb, hsl, hsla | opacity | background image | !important</p>
+            <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">https://fonts.google.com/</a>
+            <a href="https://fonts.adobe.com/" target="_blank" rel="noopener noreferrer">https://fonts.adobe.com/</a>
+            <a href="https://www.fonts.com/de" target="_blank" rel="noopener noreferrer">https://www.fonts.com/de</a>
+        </article>
+
+
+        <article id="flex" class="intersection">
+            <h2>flexbox</h2>
+            <a href="https://www.codecademy.com/learn/learn-intermediate-css/modules/layout-with-flexbox/cheatsheet"
+                target="_blank">flexbox cheatsheet codecademy</a>
+            <p>flex container: display: flex, inline-flex | justify-content: flex-start, flex-end, center, space-around,
+                space-between | align-items (one row): flex-start, flex-end, center, baseline, stretch (min-height) |
+                flex-items: flex-grow: 1, 2, ... | flex-shrink: 1, 2, ... | flex-basis: 100px | flex: -grow -shrink
+                -basis | flex-wrap: wrap, wrap-reverse, nowrap (default) | align-content (multiple rows): flex-start,
+                flex-end, center, space-between, space-around, stretch (min-height) | flex-direction | flex-flow</p>
+            <a href="https://flexboxfroggy.com/#de" target="_blank"
+                rel="noopener noreferrer">https://flexboxfroggy.com/#de</a>
+        </article>
+
+        <article>
+            <h2>grid</h2>
+            <p>grid-template-columns | grid-template-rows | </p>
+        </article>
+
+        <article id="navigationdesign" class="intersection">
+            <h2>navigation design</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-navigation-design/modules/learn-links-and-buttons/cheatsheet" target="_blank" rel="noopener noreferrer">links & buttons</a> | <a href="https://html.spec.whatwg.org/multipage/rendering.html" target="_blank" rel="noopener noreferrer">html rendering</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" target="_blank" rel="noopener noreferrer">title attribute</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#accessibility_concerns" target="_blank" rel="noopener noreferrer">title accessibility issues</a> - better: css-js-tooltip | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">:hover</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#examples" target="_blank" rel="noopener noreferrer">cursor</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank" rel="noopener noreferrer">pseudo-classes</a>: :link, :visited, :hover, :active | <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank" rel="noopener noreferrer">cascade & inheritance</a> | buttons: skeuomorphic : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a> | flat-design | <a href="https://ui-patterns.com/" target="_blank" rel="noopener noreferrer">ui-patterns</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank" rel="noopener noreferrer">transition</a> | secondary navigation: breadcrumbs | </p>
+            <nav class="haenselandgretel">
+                <a href="#cooking">cooking</a><p>⟩</p>
+                <a href="#meat">meat</a><p>⟩</p>
+                <a href="#">chicken</a>
+            </nav>
+            <nav class="breadcrumbs">
+                <a href="#cooking">cooking</a><p>></p>
+                <a href="#meat">meat</a><p>></p>
+                <a href="#">chicken</a>
+            </nav>
+        </article>
+
+        <article id="js" class="intersection">
+            <h1>js</h1>
+            <a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet"
+                target="_blank" rel="noopener noreferrer">js cheatsheet codecademy</a>
+            <p>console.log() | <a href="https://www.codecademy.com/resources/docs/javascript/comments?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">comments</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/data-types?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">data types</a>: (primitives) number, string, boolean, undefined, null - array - object | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/operators?page_ref=catalog">arithmetic
+                    operators</a>: +, -, *, /, % | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/strings?page_ref=catalog" target="_blank"
+                    rel="noopener noreferrer">strings</a>: concatenation, interpolation | properties: 'string'.length |
+                <a href="https://www.codecademy.com/resources/docs/javascript/methods?page_ref=catalog" target="_blank"
+                    rel="noopener noreferrer">methods</a>: 'string'.toUpperCase(), .startsWith(), .trim() | <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects"
+                    target="_blank" rel="noopener noreferrer">built-in objects</a>: <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
+                    target="_blank" rel="noopener noreferrer">Math</a>: .floor, .random, <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+                    target="_blank" rel="noopener noreferrer">Number</a> | </p>
+        </article>
+
+        <article id="variablesfunctions" class="intersection">
+            <h2>variables & functions</h2>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords"
+                    target="_blank" rel="noopener noreferrer">reserved keywords</a> |
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">var</a> |
+                mathematical assignment operators: +=, -=, *=, /= | increment & decrement operator: ++, -- | string:
+                concatenation, interpolation | typeof | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/functions?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">functions</a> | parameters, arguments | default parameters
+                | return | helper functions | function expression | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrow-functions?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">arrow functions</a> |
+            </p>
+            <pre class="code-block"><code>const meow = 'meow!';
+let woof = 'woof!'
+
+// function declaration
+function sayMeow (parameter1) {
+    return 'meow' + meow;
+}
+
+// function expression
+const sayMeow2 = function() {
+    return `meow ${meow}`;
+}
+
+// arrow function
+const sayWhoof = parameter2 => {
+    return whoof;
+}
+
+console.log(sayMeow(meow));
+console.log(sayMeow2(meow));
+console.log(sayWhoof(whoof));
+console.log(typeof meow);</code></pre>
+            <script>
+                "use strict";
+
+                const meow = 'meow!';
+                let woof = 'woof!'
+
+                function sayMeow(parameter1) {
+                    return 'meow' + meow;
+                }
+                const sayMeow2 = function () {
+                    return `meow ${meow}`;
+                }
+                const sayWhoof = parameter2 => {
+                    return whoof;
+                }
+
+                // console.log(sayMeow(meow));
+                // console.log(sayMeow2(meow));
+                // console.log(sayWhoof(whoof));
+                // console.log(typeof meow);
+            </script>
+        </article>
+
+        <article id="functions" class="intersection">
+            <h2>functions</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" rel="noopener noreferrer">function moz</a> | functions as parameters | <a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-iterators/cheatsheet" target="_blank" rel="noopener noreferrer">iterators</a> | In JavaScript, functions are first class objects. This means that, like other objects you’ve encountered, JavaScript functions can have properties and methods: .length, .name, .toString().</p>
+            <pre class="code-block"><code>const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+    for (let i = 1; i <= 1000000; i++) {
+        if ((2 + 2) != 4) {
+            console.log('Something has gone very wrong :( ');
+        }
+    }
+};
+
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+// isTwoPlusTwo();
+// console.log(isTwoPlusTwo.name);</code></pre>
+            <script>
+                const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+                    for (let i = 1; i <= 1000000; i++) {
+                        if ((2 + 2) != 4) {
+                            console.log('Something has gone very wrong :( ');
+                        }
+                    }
+                };
+
+                const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+
+                // isTwoPlusTwo();
+                // console.log(isTwoPlusTwo.name);
+            </script>
+        </article>
+
+        <article id="conditionals" class="intersection">
+            <h2>conditionals</h2>
+            <p>
+                <a href="https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">conditionals</a> | comparison operators: &lt;, &gt;,
+                &lt;=, &gt;=, ===, !== | logical operators: &&, ||, ! | truthy & falsy | ternary | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/switch?page_ref=catalog" target="_blank"
+                    rel="noopener noreferrer">switch</a>
+            </p>
+            <p>0, -0, "", '', null, NaN, undefined, false result in false</p>
+            <pre class="code-block"><code>let i = '';
+let j = i || 'well';
+
+if (typeof j === 'undefined') {
+    j = 'whatever';
+} else if (typeof j === 'string') {
+    j = j;
+} else {
+    j = 'well, well, well...';
+}
+
+console.log(j);
+
+const ternary = i ? console.log(i) : console.log(j);;</code></pre>
+            <script>
+                let i = '';
+                let j = i || 'well';
+
+                if (typeof j === 'undefined') {
+                    j = 'whatever';
+                } else if (typeof j === 'string') {
+                    j = j;
+                } else {
+                    j = 'well, well, well...';
+                }
+
+                // console.log(j);
+
+                // const ternary = i ? console.log(i) : console.log(j);;
+            </script>
+        </article>
+
+
+        <article id="scope" class="intersection">
+            <h2>scope</h2>
+            <p><a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-scope/cheatsheet"
+                    target="_blank" rel="noopener noreferrer">scope</a> | block {} | global scope, block scope | global
+                variables, local variables | global namespace | scope pollution</p>
+            <pre class="code-block"><code>const global = 'global variable';
+
+const functionScope = function() {
+    console.log(global);
+    const local = 'local variable';
+}
+
+console.log(local); // reference error: local not defined</code></pre>
+            <script>
+                const global = 'global variable';
+
+                const functionScope = function () {
+                    console.log(global);
+                    const local = 'local variable';
+                }
+
+                // console.log(local); // reference error: local not defined
+            </script>
+        </article>
+
+
+        <article id="hoisting" class="intersection">
+            <h2>hoisting</h2>
+            <pre class="code-block"><code>// console.log(hoisted); // undefined
+var hoisted = 'hoisted';
+
+// console.log(notHoisted); // reference error
+const notHoisted = 'not hoisted';
+
+// console.log(doSomething); // works; hoisted
+// doSomething(); // works; hoisted
+//function declaration
+function doSomething() {
+    console.log(miez);
+}
+
+// console.log(something); // reference error
+// something(); // reference error
+//function expression
+const something = function() {
+    console.log(wuff);
+}</code></pre>
+            <script>
+                // console.log(hoisted); // undefined
+                var hoisted = 'hoisted';
+
+                // console.log(notHoisted); // reference error
+                const notHoisted = 'not hoisted';
+
+                // console.log(doSomething); // works; hoisted
+                // doSomething(); // works; hoisted
+                //function declaration
+                function doSomething() {
+                    console.log(miez);
+                }
+
+                // console.log(something); // reference error
+                // something(); // reference error
+                //function expression
+                const something = function () {
+                    console.log(wuff);
+                }
+            </script>
+        </article>
+
+
+        <article id="typecoercion" class="intersection">
+            <h2>type coercion</h2>
+            <p>-, *, % convert to numbers</p>
+            <p>+ converts to a string</p>
+            <pre class="code-block"><code>25 + true;  // 26
+25 * false; // 0
+5 - '1';    // 4
+'5' + 1;    // 51</code></pre>
+        </article>
+
+
+        <article id="arrays" class="intersection">
+            <h2>arrays</h2>
+            <p><a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-arrays/cheatsheet"
+                    target="_blank" rel="noopener noreferrer">arrays</a> | let, const | length | .push() | .pop() |
+                .join() | .slice() | .splice() | .some() | .every() | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/shift" target="_blank"
+                    rel="noopener noreferrer">.shift()</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/unshift" target="_blank"
+                    rel="noopener noreferrer">.unshift()</a> | .concat() | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/indexOf" target="_blank"
+                    rel="noopener noreferrer">.indexOf()</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/filter" target="_blank"
+                    rel="noopener noreferrer">.filter((element, index) => {})</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/find" target="_blank"
+                    rel="noopener noreferrer">.find(element => element )</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/findIndex" target="_blank"
+                    rel="noopener noreferrer">.findIndex((element, index, array) => {...});</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/forEach" target="_blank"
+                    rel="noopener noreferrer">.forEach((value, index, array) => {...});</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/includes" target="_blank"
+                    rel="noopener noreferrer">.includes(value, index=0);</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/map" target="_blank"
+                    rel="noopener noreferrer">.map((element, index, array) => {...});</a> | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/arrays/reduce" target="_blank"
+                    rel="noopener noreferrer">.reduce((accumulator, currentValue, index, array) => {...},
+                    initialValue)</a> | <a href="https://www.codecademy.com/resources/docs/javascript/arrays/sort"
+                    target="_blank" rel="noopener noreferrer">.sort()</a> | arrays & functions | nested arrays</p>
+
+            <pre class="code-block"><code>let rabbits = ['Algernon', 12, 'Floppy', 9, 'Niemand', 11]; // let
+
+rabbits[4] = 'Fober';
+rabbits = ['Algernon', 12, 'Floppy', 9];
+rabbits.push('Niemand', 11);
+niemand = rabbits.slice(4);
+
+console.table(rabbits);
+console.table(niemand);
+
+const ages = []; // const
+rabbits.forEach(element => {
+    if (typeof(element) === 'number') {
+        ages.push(element);
+    }
+})
+ages[3] = 13;
+// ages = [12, 9, 11]; // typeerror
+ages.pop();
+
+console.log(ages);
+console.log(rabbits.length);</code></pre>
+
+            <script>
+                let rabbits = ['Algernon', 12, 'Floppy', 9, 'Niemand', 11]; // let
+
+                rabbits[4] = 'Fober';
+                rabbits = ['Algernon', 12, 'Floppy', 9];
+                rabbits.push('Niemand', 11);
+                const niemand = rabbits.slice(4);
+
+                // console.table(rabbits);
+                // console.table(niemand);
+
+                const ages = []; // const
+                rabbits.forEach(element => {
+                    if (typeof (element) === 'number') {
+                        ages.push(element);
+                    }
+                })
+                ages[3] = 13;
+                // ages = [12, 9, 11]; // typeerror
+                ages.pop();
+
+                // console.log(ages);
+                // console.log(rabbits.length);
+
+
+
+                /*
+                 ** get unique values with indexOf
+                 */
+                const notUnique = [2, 3, 1, 3, 4, 7, 5, 7, 6];
+                const unique = notUnique.filter((element, index) => notUnique.indexOf(element) === index);
+                // console.table(unique);
+
+                // concat
+                const array1 = [1, 2, 3];
+                const array2 = [4, 5, 6];
+                const array3 = array1.concat(array2);
+                // console.table(array3);
+                const array4 = array3.reduce((acc, curr) => acc + curr, 5); // 5 + 1 + 2 + 3 + 4 + 5 + 6 = 26
+                // console.table(array4);
+
+                // filter array of objects
+
+                const rabbitArmy = [{
+                        name: 'Algernon',
+                        age: 12
+                    },
+                    {
+                        name: 'Floppy',
+                        age: 10
+                    },
+                    {
+                        name: 'Niemand',
+                        age: 12
+                    },
+                    {
+                        name: 'Algernon',
+                        age: 13
+                    }
+                ];
+                // console.table(rabbitArmy);
+                // fix
+                const rabbitNames = [];
+                const filteredRabbitArmy = [];
+                rabbitArmy.forEach(rabbit => {
+                    if (!rabbitNames.includes(rabbit.name) && !rabbitNames.includes(rabbit.age)) {
+                        filteredRabbitArmy.push(rabbit);
+                    }
+                    rabbitNames.push(rabbit.name, rabbit.age);
+                    // console.log(rabbitNames);
+                })
+                // console.log(filteredRabbitArmy);
+            </script>
+        </article>
+
+        <article id="loops" class="intersection">
+            <h2>loops</h2>
+            <p><a href="https://www.codecademy.com/resources/docs/javascript/loops?page_ref=catalog" target="_blank"
+                    rel="noopener noreferrer">loops</a></p>
+            <pre class="code-block"><code>for (let i = 0; i < rabbits.length; i++) {
+    // console.log(rabbits[i]);
+}
+
+for (let i = 0; i < rabbits.length; i++) {
+    // console.log(rabbits[i]);
+    if (rabbits[i] === 'Floppy') {
+        // console.log(rabbits[i+1]);
+        break;
+    }
+}
+
+let counter = 0;
+// while (counter < rabbits.length) {
+//     console.log(rabbits[counter]);
+//     counter++;
+// }
+
+do {
+    // console.log(rabbits[counter]);
+    counter++;
+} while (counter < rabbits.length);</code></pre>
+            <script>
+                for (let i = 0; i < 5; i++) {
+                    // console.log(i);
+                }
+
+                for (let i = 4; i >= 0; i--) {
+                    // console.log(i);
+                }
+
+                for (let i = 0; i < rabbits.length; i++) {
+                    // console.log(rabbits[i]);
+                }
+
+                for (let i = 0; i < rabbits.length; i++) {
+                    // console.log(rabbits[i]);
+                    if (rabbits[i] === 'Floppy') {
+                        // console.log(rabbits[i+1]);
+                        break;
+                    }
+                }
+
+                let counter = 0;
+                // while (counter < rabbits.length) {
+                //     console.log(rabbits[counter]);
+                //     counter++;
+                // }
+
+                do {
+                    // console.log(rabbits[counter]);
+                    counter++;
+                } while (counter < rabbits.length);
+            </script>
+        </article>
+
+
+        <article id="objects" class="intersection">
+            <h2>objects</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods" target="_blank" rel="noopener noreferrer">moz object</a> | this in arrow functions</p>
+            <pre class="code-block"><code>const rabbit = {
+    _name : 'Algernon',
+    _age : 12, // shouldn't be accessed or changed directly
+    skills: ['Meditating', 'Learning', 'Taking drugs'],
+    'one more thing' : 42,
+
+    get name() { // getter
+        return this._name;
+    },
+    set age(age) { // setter
+        this._age = age;
+    },
+}
+
+rabbit._name = 'Niemand';
+rabbit['_name'] = 'Floppy';
+rabbit['one more thing'] = 41;
+
+const bunny = rabbit; // pass by reference - bunny points to initial object rabbit
+
+delete bunny['one more thing'];
+bunny['a new thing'] = 42;
+bunny.skills.pop();
+bunny.age = 11; // not a function
+
+const coney = {...rabbit}; // convert it to an array and back to an object?
+const rabbitCopy = Object.assign(rabbit);
+coney._name = 'Algernon';
+rabbitCopy._name = 'Niemand';</code></pre>
+            <script>
+                const rabbit = {
+                    _name : 'Algernon',
+                    _age : 12, // shouldn't be accessed or changed directly
+                    skills: ['Meditating', 'Learning', 'Taking drugs'],
+                    'one more thing' : 42,
+
+                    get name() { // getter
+                        return this._name;
+                    },
+                    set age(age) { // setter
+                        this._age = age;
+                    },
+                }
+
+                rabbit._name = 'Niemand';
+                rabbit['_name'] = 'Floppy';
+                rabbit['one more thing'] = 41;
+
+                const returnAnyPropertyWithBracketNotation = (objectName, propertyName) => objectName[propertyName];
+                const returnProp = returnAnyPropertyWithBracketNotation;
+                // console.log(returnProp(rabbit, 'one more thing'));
+
+                const bunny = rabbit; // pass by reference - bunny points to initial object rabbit
+
+                delete bunny['one more thing'];
+                bunny['a new thing'] = 42;
+                bunny.skills.pop();
+                bunny.age = 11; // not a function
+                const floppyName = bunny.name; // not a function
+                // console.log(floppyName);
+
+                const coney = {...rabbit}; // convert it to an array and back to an object?
+                const rabbitCopy = Object.assign(rabbit);
+                coney._name = 'Algernon';
+                rabbitCopy._name = 'Niemand';
+                
+                // console.table(rabbit);
+                // console.table(bunny);
+                // console.table(coney);
+                // console.log(coney.name);
+                // console.table(rabbitCopy);
+            </script>
+        </article>
+
+
+        <article id="deconstructorloops" class="intersection">
+            <h2>object deconstructor & loop over objects</h2>
+
+<pre class="code-block"><code>const fox = '🦊';
+const color = 'red';
+
+const foxObject = {
+    fox,
+    color
+};
+// console.table(foxObject);
+
+const duckObject = {
+    duck : '🦆',
+    hobby: 'swimming'
+}
+const {duck, hobby} = duckObject; // object deconstructor
+// console.log(duck, hobby);
+const {duck: myDuck, hobby: myHobby} = duckObject; // object deconstructor
+// console.log(myDuck, myHobby);
+
+for(key in duckObject) {
+    // console.log(key);
+}
+for(key of Object.keys(duckObject)) {
+    // console.log(key);
+}
+for(values of Object.values(duckObject)) {
+    // console.log(values);
+}
+for(entries of Object.entries(duckObject)) {
+    // console.table(entries);
+}
+for([k,v] of Object.entries(duckObject)) {
+    // console.table(k, v);
+}</code></pre>
+
+            <script>
+                const fox = '🦊';
+                const color = 'red';
+
+                const foxObject = {
+                    fox,
+                    color
+                };
+                // console.table(foxObject);
+
+                const duckObject = {
+                    duck : '🦆',
+                    hobby: 'swimming'
+                }
+                const {duck, hobby} = duckObject; // object deconstructor
+                // console.log(duck, hobby);
+                const {duck: myDuck, hobby: myHobby} = duckObject; // object deconstructor
+                // console.log(myDuck, myHobby);
+
+                for(key in duckObject) {
+                    // console.log(key);
+                }
+                for(key of Object.keys(duckObject)) {
+                    // console.log(key);
+                }
+                for(values of Object.values(duckObject)) {
+                    // console.log(values);
+                }
+                for(entries of Object.entries(duckObject)) {
+                    // console.table(entries);
+                }
+                for([k,v] of Object.entries(duckObject)) {
+                    // console.table(k, v);
+                }
+            </script>
+
+        </article>
+
+        <article id="factoryfunction" class="intersection">
+            <h2>factory function</h2>
+<pre class="code-block"><code>const koalaFactory = (picture, skills) => { // factory function
+    return {
+        picture,
+        skills
+    }
+};
+const koala = koalaFactory('🐨', ['Chilling', 'Eating']);
+// console.table(koala);</code></pre>
+
+            <script>
+                const koalaFactory = (picture, skills) => { // factory function
+                    return {
+                        picture,
+                        skills
+                    }
+                };
+
+                const koala = koalaFactory('🐨', ['Chilling', 'Eating']);
+                // console.table(koala);
+            </script>
+        </article>
+
+        <article id="classes" class="intersection">
+            <h2>classes</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-javascript/modules/learn-javascript-classes/cheatsheet" target="_blank" rel="noopener noreferrer">static methods</a></p>
+<pre class="code-block"><code>class Animal {
+    constructor(picture, name) {
+        this._picture = picture;
+        this._name = name;
+    }
+    get picture() {
+        return this._picture;
+    }
+    get name() {
+        return this._name;
+    }
+}
+
+class Cat extends Animal {
+    constructor(picture, name, quietschelevel) {
+        super(picture, name);
+        this._quietschelevel = quietschelevel;
+    }
+    static meow() { // static method can only be called from class, not the instance
+        return 'meow!';
+    }
+    get quietschelevel() {
+        return this._quietschelevel;
+    }
+    incrementQuietschelevel() {
+        this._quietschelevel++;
+    }
+}
+const gato = new Cat('🐈', 'gato', 5);
+gato.incrementQuietschelevel();
+// console.log(Cat.meow());
+// console.log(gato.meow()); // typeerror
+// console.table(gato);</code></pre>
+
+            <script>
+                class Animal {
+                    constructor(picture, name) {
+                        this._picture = picture;
+                        this._name = name;
+                    }
+
+                    get picture() {
+                        return this._picture;
+                    }
+
+                    get name() {
+                        return this._name;
+                    }
+                }
+
+                class Cat extends Animal {
+                    constructor(picture, name, quietschelevel) {
+                        super(picture, name);
+                        this._quietschelevel = quietschelevel;
+                    }
+
+                    static meow() { // static method can only be called from class, not the instance
+                        return 'meow!';
+                    }
+
+                    get quietschelevel() {
+                        return this._quietschelevel;
+                    }
+
+                    incrementQuietschelevel() {
+                        this._quietschelevel++;
+                    }
+                }
+
+                const gato = new Cat('🐈', 'gato', 5);
+                gato.incrementQuietschelevel();
+                // console.log(Cat.meow());
+                // console.log(gato.meow()); // typeerror
+                // console.table(gato);
+            </script>
+        </article>
+
+        <article id="modules" class="intersection">
+            <h2>modules</h2>
+            <p><a href="https://www.codecademy.com/article/introduction-to-javascript-runtime-environments" target="_blank" rel="noopener noreferrer">js runtime environments</a> | <a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/implementing-modules-using-es-6-syntax" target="_blank" rel="noopener noreferrer">es6 modules</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener noreferrer">moz es6 modules</a> <a href="http://es6-features.org/#Constants">ecmascript 6</a> | <a href="https://www.codecademy.com/article/use-devtools" target="_blank" rel="noopener noreferrer">dev-tools</a></p>
+<pre class="code-block"><code>&lt;script type="module"&gt; // type module
+    import {cat, meow as miau} from './_modules/cat.js'; // as
+    console.log(`the ${cat.picture} is ${cat.skills[0]} 
+    and ${cat.skills[1]} and says '${miau()}' to you.`);
+
+    import resources from './_modules/dog.js'; 
+    // short for: import { default as resources } from './modules/dog.js';
+    const { dog, whoof } = resources;
+    console.log(`the ${dog.picture} is 
+    ${dog.skills[0]} and ${dog.skills[1]} and says '${whoof()}' to you.`);
+&lt;/script&gt;</code></pre>
+            <script type="module"> // type module
+                import {cat, meow as miau} from './_modules/cat.js'; // as
+
+                // console.log(`the ${cat.picture} is ${cat.skills[0]} and ${cat.skills[1]} and says '${miau()}' to you.`);
+
+                import resources from './_modules/dog.js'; // short for: import { default as resources } from './modules/dog.js';
+                const { dog, whoof } = resources;
+
+                // console.log(`the ${dog.picture} is ${dog.skills[0]} and ${dog.skills[1]} and says '${whoof()}' to you.`);
+            </script>
+<p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/implementing-modules-in-node" target="_blank" rel="noopener noreferrer">node modules</a></p>
+
+        </article>
+
+        <article id="promises" class="intersection">
+            <h2>promises</h2>
+
+
+        </article>
+
+    </main>
+
+    <footer id="footer">
+        <a href="https://notanumber.ch" target="_blank" rel="noopener noreferrer">notanumber.ch</a>
+        <a href="./404.html">404.html</a>
+    </footer>
+
+    <div id="large-img-container">
+        <img id="large-img" src="./img/pexels-jacob-colvin-1757363.jpg">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+pre,
+code,
+code > span {
+    --code-background: var(--dark-gray-8);
+    --code-text: var(--tint-12);
+    --code-comment: var(--nephritis-300);
+    --code-keyword: var(--belize-hole-300);
+    --code-function: var(--sunflower-200);
+    --code-type: var(--peter-river-300);
+    --code-string: var(--alizarin-300);
+    --code-number: var(--emerald-200);
+    --code-punctuation: var(--tint-12);
+    --code-tag: var(--peter-river-300); /* TODO: */
+    --code-attr-name: var(--peter-river-300); /* TODO: */
+    --code-attr-value: var(--peter-river-300); /* TODO: */
+    --code-entity: var(--peter-river-300); /* TODO: */
+    --code-regex: var(--peter-river-300); /* TODO: */
+    --code-operator: var(--tint-12);
+    --code-variable: var(--peter-river-200);
+    --code-atrule: var(--peter-river-300); /* TODO: */
+    --code-attr-value: var(--peter-river-300); /* TODO: */
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: var(--font-size-smallest);
+    background-color: var(--code-background);
+}
+
+.code-block {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.code-keyword {
+    color: var(--code-keyword);
+}
+.code-comment {
+    color: var(--code-comment);
+}
+.code-function {
+    color: var(--code-function);
+}
+.code-type {
+    color: var(--code-type);
+}
+.code-string {
+    color: var(--code-string);
+}
+.code-number {
+    color: var(--code-number);
+}
+.code-variable {
+    color: var(--code-variable);
+}
