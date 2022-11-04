@@ -40,15 +40,21 @@
         <nav id="links">
             <a href="#htmlcss" class="link">html & css</a>
             <a href="#css" class="link">css</a>
-            <a href="#flex" class="link">flex</a>
+            <a href="#flexgrid" class="link">flex & grid</a>
+            <a href="#transition" class="link">transition</a>
+            <a href="#cssvariables" class="link">css variables</a>
+            <a href="#cssfunctions" class="link">css functions</a>
+            <a href="#accessibility" class="link">accessibility</a>
+            <a href="#compatibility" class="link">compatibility</a>
+            <a href="#colordesign" class="link">color design</a>
+            <a href="#responsivedesign" class="link">responsive design</a>
             <a href="#navigationdesign" class="link">navigation design</a>
             <a href="#js" class="link">js</a>
-            <a href="#variablesfunctions" class="link">variables & functions</a>
-            <a href="#functions" class="link">functions</a>
-            <a href="#conditionals" class="link">conditionals</a>
-            <a href="#scope" class="link">scope</a>
-            <a href="#hoisting" class="link">hoisting</a>
+            <a href="#jsvariablesfunctions" class="link">js variables & functions</a>
             <a href="#typecoercion" class="link">type coercion</a>
+            <a href="#functions" class="link">functions</a>
+            <a href="#scope" class="link">scope</a>
+            <a href="#conditionals" class="link">conditionals</a>
             <a href="#arrays" class="link">arrays</a>
             <a href="#loops" class="link">loops</a>
             <a href="#objects" class="link">objects</a>
@@ -59,6 +65,10 @@
             <a href="#promises" class="link">promises</a>
             <a href="#asyncawait" class="link">async await</a>
             <a href="#requests" class="link">requests</a>
+            <a href="#errors" class="link">error handling</a>
+            <a href="#currying" class="link">currying</a>
+            <a href="#hoisting" class="link">hoisting</a>
+            <a href="#eventloopmemorydesign" class="link">event loop, memory, design</a>
         </nav>
         <div id="menu">
             <span class="menu-line"></span>
@@ -69,15 +79,21 @@
     <nav id="nav-screen">
         <a href="#htmlcss" class="link screen-link">html & css ref</a>
         <a href="#css" class="link screen-link">css</a>
-        <a href="#flex" class="link screen-link">flex</a>
+        <a href="#flexgrid" class="link screen-link">flex & grid</a>
+        <a href="#transition" class="link screen-link">transition</a>
+        <a href="#cssvariables" class="link screen-link">css variables</a>
+        <a href="#cssfunctions" class="link screen-link">css functions</a>
+        <a href="#accessibility" class="link screen-link">accessibility</a>
+        <a href="#compatibility" class="link screen-link">compatibility</a>
+        <a href="#colordesign" class="link screen-link">color design</a>
+        <a href="#responsivedesign" class="link screen-link">responsive design</a>
         <a href="#navigationdesign" class="link screen-link">navigation design</a>
         <a href="#js" class="link screen-link">js</a>
-        <a href="#variablesfunctions" class="link screen-link">variables & functions</a>
-        <a href="#functions" class="link screen-link">functions</a>
-        <a href="#conditionals" class="link screen-link">conditionals</a>
-        <a href="#scope" class="link screen-link">scope</a>
-        <a href="#hoisting" class="link screen-link">hoisting</a>
+        <a href="#jsvariablesfunctions" class="link screen-link">js variables & functions</a>
         <a href="#typecoercion" class="link screen-link">type coercion</a>
+        <a href="#functions" class="link screen-link">functions</a>
+        <a href="#scope" class="link screen-link">scope</a>
+        <a href="#conditionals" class="link screen-link">conditionals</a>
         <a href="#arrays" class="link screen-link">arrays</a>
         <a href="#loops" class="link screen-link">loops</a>
         <a href="#objects" class="link screen-link">objects</a>
@@ -88,6 +104,10 @@
         <a href="#promises" class="link screen-link">promises</a>
         <a href="#asyncawait" class="link screen-link">async await</a>
         <a href="#requests" class="link screen-link">requests</a>
+        <a href="#errors" class="link screen-link">error handling</a>
+        <a href="#currying" class="link screen-link">currying</a>
+        <a href="#hoisting" class="link screen-link">hoisting</a>
+        <a href="#eventloopmemorydesign" class="link screen-link">event loop, memory, design</a>
     </nav>
 
     <header id="header">
@@ -95,6 +115,7 @@
     </header>
 
     <main>
+
         <article id="htmlcss" class="intersection">
             <h1>html & css</h1>
             <div>
@@ -104,6 +125,7 @@
                     w3</a> |
                 <a href="https://www.codecademy.com/resources/docs/css" target="_blank" rel="noopener noreferrer">css
                     codecademy</a>
+                <p>widths, margins, paddings, and borders do not inherit</p>
             </div>
         </article>
 
@@ -131,23 +153,171 @@
         </article>
 
 
-        <article id="flex" class="intersection">
+        <article id="flexgrid" class="intersection">
             <h2>flexbox</h2>
             <a href="https://www.codecademy.com/learn/learn-intermediate-css/modules/layout-with-flexbox/cheatsheet"
                 target="_blank">flexbox cheatsheet codecademy</a>
             <p>flex container: display: flex, inline-flex | justify-content: flex-start, flex-end, center, space-around,
                 space-between | align-items (one row): flex-start, flex-end, center, baseline, stretch (min-height) |
-                flex-items: flex-grow: 1, 2, ... | flex-shrink: 1, 2, ... | flex-basis: 100px | flex: -grow -shrink
+                flex-items: flex-grow: 1, 2, ... | flex-shrink: 1, 2, ... | flex-basis: 100px | flex (shorthand): -grow -shrink
                 -basis | flex-wrap: wrap, wrap-reverse, nowrap (default) | align-content (multiple rows): flex-start,
-                flex-end, center, space-between, space-around, stretch (min-height) | flex-direction | flex-flow</p>
+                flex-end, center, space-between, space-around, stretch (min-height) | flex-direction: row, row-reverse, column, column-reverse | flex-flow (shorthand): -direction, -wrap</p>
             <a href="https://flexboxfroggy.com/#de" target="_blank"
                 rel="noopener noreferrer">https://flexboxfroggy.com/#de</a>
+            <h2>grid</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-css/modules/learn-css-grid/cheatsheet" target="_blank" rel="noopener noreferrer">grid</a> / inline-grid | grid-template-columns / grid-template-rows / grid-template (shorthand) | fraction (fr) | repeat | minmax | row-gap / column-gap / gap (shorthand) | grid-row-start / grid-row-end | grid-column-start / grid-column-end / grid-column (shorthand) / grid-row (shorthand) / grid-area (shorthand) | grid-template-areas</p>
         </article>
 
-        <article>
-            <h2>grid</h2>
-            <p>grid-template-columns | grid-template-rows | </p>
+
+        <article id="transition" class="intersection">
+            <h2>transition</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank" rel="noopener noreferrer">transition moz</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="noopener noreferrer">transition-property</a>: background-color, color, ... / transition-duration: 2s / <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function" target="_blank" rel="noopener noreferrer">transition-timing-function</a>: linear, ease-in, ease-out, ... | transition-delay: 0.5s | transition (shorthand): color 1.5s linear .5s / color 1s linear, font-size 750ms ease-in 100ms / all 1.5s linear .5s</p>
         </article>
+
+        
+        <article id="cssvariables" class="intersection">
+            <h2>css variables</h2>
+            <pre class="code-block"><code>/* global scope */
+:root {
+    --orange-color: #FF933A;
+}
+
+body {
+    background-color: var(--orange-color);
+}
+
+/* local scope */
+button {
+    --orange-color: #BF6317;
+    /* fallback values */
+    color: var(--main-color, var(--favorite-orange, var(--favorite-yellow, yellow)));
+    border: 1px solid black;
+}</code></pre>
+        </article>
+
+
+        <article id="cssfunctions" class="intersection">
+            <h2>css functions</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions" target="_blank" rel="noopener noreferrer">css functions moz</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank" rel="noopener noreferrer">calc()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min" target="_blank" rel="noopener noreferrer">min()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max" target="_blank" rel="noopener noreferrer">max()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener noreferrer">clamp()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb" target="_blank" rel="noopener noreferrer">rgb()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba" target="_blank" rel="noopener noreferrer">rgba()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl" target="_blank" rel="noopener noreferrer">hsl()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla" target="_blank" rel="noopener noreferrer">hsla()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="_blank" rel="noopener noreferrer">filter</a>: brightness() - blur() - drop-shadow() | transform: scale() - rotate() - translate()</p>
+            <pre class="code-block"><code>.main-banner {
+    background: url('images/bg-image.jpg'); 
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.item {
+    margin: 15px calc(1.5vw + 5px);
+}
+
+.content {
+    width: 50vw;
+    max-width: 500px;
+}  
+.content {
+    width: min(500px, 50vw);
+}
+.content {
+    width: max(500px, 50vw);
+}
+
+.main-text{
+    font-size: clamp(12px, 1.5vw, 48px);
+}
+
+button {
+    filter: drop-shadow(-10px 5px 0.2rem rgba(50, 200, 210, 0.6));
+}
+
+.shifted {
+    transform: translate(0px, 100px);
+}  
+</code></pre>
+        </article>
+
+
+        <article id="accessibility" class="intersection">
+            <h2>accessibility</h2>
+            <p><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation" target="_blank" rel="noopener noreferrer">standards</a> | font-size: 18 to 20px | line-height: 1.5 | (letter-spacing) | text-align: left - right - center - !justify | 45 to 85 characters per line, ideal: 65 characters: 1ch = width of 0 character | <a href="https://www.w3.org/TR/WCAG20/" target="_blank" rel="noopener noreferrer"></a>: minimum contrast ratios between background & text: 4.5:1 (AA criteria)—Text that is less than 24px (not bold) and 19px (bold), 3:1 (AA criteria)—Text larger than 24px (not bold) and 19px (bold), 7:1 (AAA criteria)—Text that is less than 24px (not bold) and 19px (bold), 4.5:1 (AAA criteria)—Text larger than 24px (not bold) and 19px (bold) | <a href="https://www.google.com/chrome/canary/" target="_blank" rel="noopener noreferrer">chrome canary</a> | <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">contrast checker</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility" target="_blank" rel="noopener noreferrer">visibility</a>: hidden = not visible to screen readers | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>: none = visible to screen readers | !-reverse | <a href="https://a11y.coffee/start-testing/" target="_blank" rel="noopener noreferrer">testing</a>: <a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank" rel="noopener noreferrer">google's lighthouse</a>, <a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WAVE</a> | <a href="https://www.deque.com/axe/" target="_blank" rel="noopener noreferrer">axe</a> | <a href="https://accessibilityinsights.io/" target="_blank" rel="noopener noreferrer">accessibility insights</a></p>
+            <pre class="code-block"><code>p {
+    text-align: left;
+    min-width: 45ch;
+    max-width: 85ch;
+}
+&lt;abbr&gt; title='Cascading Style Sheets'>CSS&lt;/abbr&gt;
+a {
+    text-decoration: underline;
+}
+.button {
+    cursor: pointer;
+}
+a:visited {
+    color: purple;
+}
+input:focus {
+    border-color: blue;
+}
+&lt;p class='hidden-sentence' aria-hidden='true'&gt;This is hidden from screen readers!&lt;/p&gt;
+@media print {
+    nav {
+        display: none;
+    }
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
+}</code></pre>
+        </article>
+
+
+        <article id="compatibility" class="intersection">
+            <h2>browser compatibility</h2>
+            <p><a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">caniuse</a> | <a href="https://en.wikipedia.org/wiki/Browser_engine" target="_blank" rel="noopener noreferrer">browser engine</a>: <a href="https://en.wikipedia.org/wiki/Blink_(browser_engine)" target="_blank" rel="noopener noreferrer">blink</a>, <a href="https://en.wikipedia.org/wiki/Gecko_(software)" target="_blank" rel="noopener noreferrer">gecko</a>, <a href="https://en.wikipedia.org/wiki/WebKit" target="_blank" rel="noopener noreferrer">webkit</a> | <a href="https://browserdefaultstyles.com/" target="_blank" rel="noopener noreferrer">browser default styles</a> | reset: <a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener noreferrer">normalize.css</a>, <a href="https://github.com/jgthms/minireset.css" target="_blank" rel="noopener noreferrer">minireset.css</a> | <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target="_blank" rel="noopener noreferrer">vendor prefixes</a>: <a href="https://github.com/postcss/autoprefixer" target="_blank" rel="noopener noreferrer">autoprefixer</a> | <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" target="_blank" rel="noopener noreferrer">polyfill</a> | <a href="https://github.com/Modernizr/Modernizr" target="_blank" rel="noopener noreferrer">modernizr</a> | <a href="https://github.com/financial-times/polyfill-service" target="_blank" rel="noopener noreferrer">polyfill.io</a></p>
+            <pre class="code-block"><code>.tilted {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+&lt;script src="https://polyfill.io/v3/polyfill.min.js"&gt;&lt;/script&gt;</code></pre>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-css/articles/css-feature-queries" target="_blank" rel="noopener noreferrer">css feature queries</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports" target="_blank" rel="noopener noreferrer">@supports</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules" target="_blank" rel="noopener noreferrer">css conditional rules</a>: and, or, not</p>
+            <pre class="code-block"><code>.button {
+    /* The button will be blue by default */
+    background-color: blue;
+    /* linear-gradient will override the blue button if the feature is supported */
+    background: linear-gradient(red, white, blue);
+}
+/* progressive enhancement */
+img {
+    position: absolute;
+    height: 50%;
+    width: 100%;  
+}
+@supports (object-fit: cover) {
+    img {
+        /* override previous settings if necessary */
+        position: static;
+        /* use newer features */
+        object-fit: cover;
+    }
+}</code></pre>
+        </article>
+
+
+        <article id="colordesign" class="intersection">
+            <h2>color design</h2>
+            <p><a href="https://www.december.com/html/spec/colorhsl.html" target="_blank" rel="noopener noreferrer">hsl</a> | color wheel | warm colors, cool colors | tints and shades | color contrast | color schemes: monocromatic, complementary, analogues, triadic | <a href="https://www.codecademy.com/courses/learn-color-design/informationals/premium-adobe-color" target="_blank" rel="noopener noreferrer">adobe color</a> | <a href="https://color.adobe.com/de/create/color-wheel" target="_blank" rel="noopener noreferrer">adobe color cc</a> | <a href="http://colorsafe.co/" target="_blank" rel="noopener noreferrer">color safe</a> | <a href="https://www.codecademy.com/courses/learn-color-design/informationals/premium-cloudflare" target="_blank" rel="noopener noreferrer">cloud flare</a> | <a href="https://color.cloudflare.design/" target="_blank" rel="noopener noreferrer">cloudflare</a></p>
+        </article>
+
+
+        <article id="responsivedesign" class="intersection">
+            <h2>responsive design</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-css/modules/learn-responsive-design-module/cheatsheet" target="_blank" rel="noopener noreferrer">responsive design</a> | em | rem | percentages: height, width / padding, margin | min-width, max-width / min-height, max-height |   background-image: url('#') / background-repeat: no-repeat / background-position: center / background-size: cover</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics" target="_blank" rel="noopener noreferrer">viewport</a> | meta name="viewport" content="width=device-width, initial-scale=1.0"</p>
+            <p>@media only screen and (max-width: 480px) { } (= smartphone landscape) / @media only screen and (min-width: 320px) and (max-width: 480px) { } / @media only screen and (min-resolution: 300dpi) { }, <a href="https://en.wikipedia.org/wiki/Dots_per_inch" target="_blank" rel="noopener noreferrer">dpi wiki</a> / @media only screen and (max-width: 480px) and (min-resolution: 300dpi) { } / @media only screen and (min-width: 480px), (orientation: landscape) { } | @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { } (= tablet landscape) | <a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png" target="_blank" rel="noopener noreferrer">screen sizes</a> | <a href="https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries/" target="_blank" rel="noopener noreferrer">media vs. media screen vs. media screen only</a></p>
+            <p>Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content.</p>
+        </article>
+
 
         <article id="navigationdesign" class="intersection">
             <h2>navigation design</h2>
@@ -163,6 +333,7 @@
                 <a href="#">chicken</a>
             </nav>
         </article>
+
 
         <article id="js" class="intersection">
             <h1>js</h1>
@@ -186,8 +357,9 @@
                     target="_blank" rel="noopener noreferrer">Number</a> | </p>
         </article>
 
-        <article id="variablesfunctions" class="intersection">
-            <h2>variables & functions</h2>
+
+        <article id="jsvariablesfunctions" class="intersection">
+            <h2>js variables & functions</h2>
             <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords"
                     target="_blank" rel="noopener noreferrer">reserved keywords</a> |
@@ -245,6 +417,18 @@ console.log(typeof meow);</code></pre>
             </script>
         </article>
 
+
+        <article id="typecoercion" class="intersection">
+            <h2>type coercion</h2>
+            <p>-, *, % convert to numbers</p>
+            <p>+ converts to a string</p>
+            <pre class="code-block"><code>25 + true;  // 26
+25 * false; // 0
+5 - '1';    // 4
+'5' + 1;    // 51</code></pre>
+        </article>
+
+
         <article id="functions" class="intersection">
             <h2>functions</h2>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" rel="noopener noreferrer">function moz</a> | functions as parameters | <a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-iterators/cheatsheet" target="_blank" rel="noopener noreferrer">iterators</a> | In JavaScript, functions are first class objects. This means that, like other objects you’ve encountered, JavaScript functions can have properties and methods: .length, .name, .toString().</p>
@@ -276,48 +460,6 @@ const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
             </script>
         </article>
 
-        <article id="conditionals" class="intersection">
-            <h2>conditionals</h2>
-            <p>
-                <a href="https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog"
-                    target="_blank" rel="noopener noreferrer">conditionals</a> | comparison operators: &lt;, &gt;,
-                &lt;=, &gt;=, ===, !== | logical operators: &&, ||, ! | truthy & falsy | ternary | <a
-                    href="https://www.codecademy.com/resources/docs/javascript/switch?page_ref=catalog" target="_blank"
-                    rel="noopener noreferrer">switch</a>
-            </p>
-            <p>0, -0, "", '', null, NaN, undefined, false result in false</p>
-            <pre class="code-block"><code>let i = '';
-let j = i || 'well';
-
-if (typeof j === 'undefined') {
-    j = 'whatever';
-} else if (typeof j === 'string') {
-    j = j;
-} else {
-    j = 'well, well, well...';
-}
-
-console.log(j);
-
-const ternary = i ? console.log(i) : console.log(j);;</code></pre>
-            <script>
-                let i = '';
-                let j = i || 'well';
-
-                if (typeof j === 'undefined') {
-                    j = 'whatever';
-                } else if (typeof j === 'string') {
-                    j = j;
-                } else {
-                    j = 'well, well, well...';
-                }
-
-                // console.log(j);
-
-                // const ternary = i ? console.log(i) : console.log(j);;
-            </script>
-        </article>
-
 
         <article id="scope" class="intersection">
             <h2>scope</h2>
@@ -345,59 +487,46 @@ console.log(local); // reference error: local not defined</code></pre>
         </article>
 
 
-        <article id="hoisting" class="intersection">
-            <h2>hoisting</h2>
-            <pre class="code-block"><code>// console.log(hoisted); // undefined
-var hoisted = 'hoisted';
+        <article id="conditionals" class="intersection">
+            <h2>conditionals</h2>
+            <p>
+                <a href="https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog"
+                    target="_blank" rel="noopener noreferrer">conditionals</a> | comparison operators: &lt;, &gt;,
+                &lt;=, &gt;=, ===, !== | logical operators: &&, ||, ! | truthy & falsy | ternary | <a
+                    href="https://www.codecademy.com/resources/docs/javascript/switch?page_ref=catalog" target="_blank"
+                    rel="noopener noreferrer">switch</a>
+            </p>
+            <p>0, -0, "", '', null, NaN, undefined, false result in false</p>
+            <pre class="code-block"><code>let i = '';
+let j = i || 'well';
 
-// console.log(notHoisted); // reference error
-const notHoisted = 'not hoisted';
-
-// console.log(doSomething); // works; hoisted
-// doSomething(); // works; hoisted
-//function declaration
-function doSomething() {
-    console.log(miez);
+if (typeof j === 'undefined') {
+    j = 'whatever';
+} else if (typeof j === 'string') {
+    j = j;
+} else {
+    j = 'well, well, well...';
 }
 
-// console.log(something); // reference error
-// something(); // reference error
-//function expression
-const something = function() {
-    console.log(wuff);
-}</code></pre>
+console.log(j);
+
+const ternary = i ? console.log(i) : console.log(j);</code></pre>
             <script>
-                // console.log(hoisted); // undefined
-                var hoisted = 'hoisted';
+                let i = '';
+                let j = i || 'well';
 
-                // console.log(notHoisted); // reference error
-                const notHoisted = 'not hoisted';
-
-                // console.log(doSomething); // works; hoisted
-                // doSomething(); // works; hoisted
-                //function declaration
-                function doSomething() {
-                    console.log(miez);
+                if (typeof j === 'undefined') {
+                    j = 'whatever';
+                } else if (typeof j === 'string') {
+                    j = j;
+                } else {
+                    j = 'well, well, well...';
                 }
 
-                // console.log(something); // reference error
-                // something(); // reference error
-                //function expression
-                const something = function () {
-                    console.log(wuff);
-                }
+                // console.log(j);
+
+                // const ternary = i ? console.log(i) : console.log(j);
             </script>
-        </article>
-
-
-        <article id="typecoercion" class="intersection">
-            <h2>type coercion</h2>
-            <p>-, *, % convert to numbers</p>
-            <p>+ converts to a string</p>
-            <pre class="code-block"><code>25 + true;  // 26
-25 * false; // 0
-5 - '1';    // 4
-'5' + 1;    // 51</code></pre>
         </article>
 
 
@@ -495,7 +624,8 @@ console.log(rabbits.length);</code></pre>
 
                 // filter array of objects
 
-                const rabbitArmy = [{
+                const rabbitArmy = [
+                    {
                         name: 'Algernon',
                         age: 12
                     },
@@ -526,6 +656,7 @@ console.log(rabbits.length);</code></pre>
                 // console.log(filteredRabbitArmy);
             </script>
         </article>
+
 
         <article id="loops" class="intersection">
             <h2>loops</h2>
@@ -741,6 +872,7 @@ for([k,v] of Object.entries(duckObject)) {
 
         </article>
 
+
         <article id="factoryfunction" class="intersection">
             <h2>factory function</h2>
 <pre class="code-block"><code>const koalaFactory = (picture, skills) => { // factory function
@@ -764,6 +896,7 @@ const koala = koalaFactory('🐨', ['Chilling', 'Eating']);
                 // console.table(koala);
             </script>
         </article>
+
 
         <article id="classes" class="intersection">
             <h2>classes</h2>
@@ -845,6 +978,7 @@ gato.incrementQuietschelevel();
             </script>
         </article>
 
+
         <article id="modules" class="intersection">
             <h2>modules</h2>
             <p><a href="https://www.codecademy.com/article/introduction-to-javascript-runtime-environments" target="_blank" rel="noopener noreferrer">js runtime environments</a> | <a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/implementing-modules-using-es-6-syntax" target="_blank" rel="noopener noreferrer">es6 modules</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener noreferrer">moz es6 modules</a> <a href="http://es6-features.org/#Constants">ecmascript 6</a> | <a href="https://www.codecademy.com/article/use-devtools" target="_blank" rel="noopener noreferrer">dev-tools</a></p>
@@ -872,6 +1006,7 @@ gato.incrementQuietschelevel();
 <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/implementing-modules-in-node" target="_blank" rel="noopener noreferrer">node modules</a></p>
 
         </article>
+
 
         <article id="promises" class="intersection">
             <h2>promises</h2>
@@ -942,6 +1077,7 @@ prom
             </script>
         </article>
 
+
         <article id="asyncawait" class="intersection">
             <h2>async await</h2>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator" target="_blank" rel="noopener noreferrer">generator</a> | async functions always return a promise | the await operator returns the resolved value of a promise | handling independent promises | await Promise.all()</p>
@@ -985,7 +1121,7 @@ tryCatch();</code></pre>
                 const tryCatch = async () => {
                     try {
                         const resolvedValue = await justAPromise;
-                        console.log(resolvedValue);
+                        // console.log(resolvedValue);
                     }
                     catch (err) {
                         console.log(err);
@@ -995,10 +1131,231 @@ tryCatch();</code></pre>
             </script>
         </article>
 
+
         <article id="requests" class="intersection">
             <h2>requests</h2>
-            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/http-requests" target="_blank" rel="noopener noreferrer">http requests</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank" rel="noopener noreferrer">http request methods</a> | <a href="https://www.codecademy.com/article/what-is-rest" target="_blank" rel="noopener noreferrer">rest</a> | <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank" rel="noopener noreferrer">http status codes</a> | <a href="https://www.codecademy.com/article/http-errors-404" target="_blank" rel="noopener noreferrer">http errors</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop" target="_blank" rel="noopener noreferrer">event loop</a> | <a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-concurrency-model-and-event-loop" target="_blank" rel="noopener noreferrer">Concurrency Model and Event Loop in JavaScript</a> </p>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/http-requests" target="_blank" rel="noopener noreferrer">http requests</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank" rel="noopener noreferrer">http request methods</a> | <a href="https://www.codecademy.com/article/what-is-rest" target="_blank" rel="noopener noreferrer">rest</a> | <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" target="_blank" rel="noopener noreferrer">http status codes</a> | <a href="https://www.codecademy.com/article/http-errors-404" target="_blank" rel="noopener noreferrer">http errors</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop" target="_blank" rel="noopener noreferrer">event loop</a> | <a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-concurrency-model-and-event-loop" target="_blank" rel="noopener noreferrer">Concurrency Model and Event Loop in JavaScript</a></p>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-javascript/modules/intermediate-javascript-requests/cheatsheet" target="_blank" rel="noopener noreferrer">requests</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer">fetch</a> | <a href="https://en.wikipedia.org/wiki/Query_string" target="_blank" rel="noopener noreferrer">query string</a> | <a href="https://www.codecademy.com/article/rebrandly-signup" target="_blank" rel="noopener noreferrer">rebrandly</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" target="_blank" rel="noopener noreferrer">JSON.stringify()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function target="_blank" rel="noopener noreferrer">async</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" target="_blank" rel="noopener noreferrer">await</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" target="_blank" rel="noopener noreferrer">try...catch</a> | <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank" rel="noopener noreferrer">themoviedb.org</a></p> <!-- rebrandly api key: 601a87da2b994e0a93a8d389c77f8c1e -->
+            <p>creates a request object that contains relevant information that an API needs | sends that request object to the API endpoint provided returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back</p>
+<pre class="code-block"><code>const fetchCatFactButton = document.getElementById('fetchCatFact');
+const printCatFact = document.getElementById('printCatFact');
+
+const getCatFact = async () => {
+    try {
+        const response = await fetch('https://catfact.ninja/fact');
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            printCatFact.innerText = jsonResponse.fact;
+        }
+    }
+    catch (error) {
+        printCatFact.innerText = error;
+    }
+}
+fetchCatFactButton.onclick = getCatFact;</code></pre>
+            <button id="fetchCatFact">click me</button>
+            <div id="printCatFact" style="height: 4rem;"></div>
+            <script>
+                const fetchCatFactButton = document.getElementById('fetchCatFact');
+                const printCatFact = document.getElementById('printCatFact');
+
+                const getCatFact = async () => {
+                    try {
+                        const response = await fetch('https://catfact.ninja/fact');
+                        if (response.ok) {
+                            const jsonResponse = await response.json();
+                            printCatFact.innerText = jsonResponse.fact;
+                        }
+                    }
+                    catch (error) {
+                        printCatFact.innerText = error;
+                    }
+                }
+                fetchCatFactButton.onclick = getCatFact;
+            </script>
         </article>
+
+
+        <article id="errors" class="intersection">
+            <h2>debugging</h2>
+            <p><a href="https://www.codecademy.com/learn/learn-intermediate-javascript/modules/errors-and-error-handling/cheatsheet" target="_blank" rel="noopener noreferrer">errors and error handling</a> | <a href="https://www.codecademy.com/resources/blog/errors-in-code-think-differently/" target="_blank" rel="noopener noreferrer">errors</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors" target="_blank" rel="noopener noreferrer">list of errors</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank" rel="noopener noreferrer">error</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank" rel="noopener noreferrer">built-in objects</a> | <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">stackoverflow</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">moz js</a></p>
+            <p>SyntaxError: typo — code cannot be interpreted by compiler - brackets, braces, parentheses, invalid semicolons | ReferenceError: variable does not exist | TypeError: operation on a value of wrong type</p>
+            <button id="errorBtn">log an error to the console</button>
+            <button id="throwErrorBtn">throw an error</button>
+            <pre class="code-block"><code>const errorBtn = document.getElementById('errorBtn');
+errorBtn.onclick = () => {
+    console.log(Error('i created an error! muahahaha...')); // Error creates an Error object
+    console.log('this will be printed after logging an error.');
+};
+const throwErrorBtn = document.getElementById('throwErrorBtn');
+throwErrorBtn.onclick = () => {
+    throw new Error('i\'m throwing errors! muahahaha...'); // stops code execution
+    console.log('this will not be printed after throwing an error.');
+}
+const handleErrorUsingTryCatch = (array) => {
+    try {
+        array.forEach(element => {
+            console.log(element);
+        })
+    } catch (error) {
+        console.log(error);
+    }
+};
+// handleErrorUsingTryCatch('not an array');
+// console.log('will still be logged');</code></pre>
+            <script>
+                const errorBtn = document.getElementById('errorBtn');
+                errorBtn.onclick = () => {
+                    console.log(Error('i created an error! muahahaha...')); // Error creates an Error object
+                    console.log('this will be printed after logging an error.');
+                };
+                const throwErrorBtn = document.getElementById('throwErrorBtn');
+                throwErrorBtn.onclick = () => {
+                    throw new Error('i\'m throwing errors! muahahaha...'); // stops code execution
+                    console.log('this will not be printed after throwing an error.');
+                }
+                const handleErrorUsingTryCatch = (array) => {
+                    try {
+                        array.forEach(element => {
+                            console.log(element);
+                        })
+                    } catch (error) {
+                        console.log(error);
+                    }
+                };
+                // handleErrorUsingTryCatch('not an array');
+                // console.log('will still be logged');
+            </script>
+        </article>
+
+        <article id="currying" class="intersection">
+            <h2>currying</h2>
+            <pre class="code-block"><code>const curryA = a => {
+    return function curryB(b) {
+        return a + b;
+    }
+}
+// console.log(curryA(1)(2));
+
+let add_one = curryA(1); // equals curryB (return)
+// console.log(add_one(2)); // closure: nested function retains scope of parent function
+
+const anotherCurry = a => b => a + b;
+// console.log(anotherCurry(1)(2));</code></pre>
+            <script>
+                const curryA = a => {
+                    return function curryB(b) {
+                        return a + b;
+                    }
+                }
+                // console.log(curryA(1)(2));
+
+                let add_one = curryA(1); // equals curryB (return)
+                // console.log(add_one(2)); // closure: nested function retains scope of parent function
+
+                const anotherCurry = a => b => a + b;
+                // console.log(anotherCurry(1)(2));
+
+                const moreRabbits = [
+                    {
+                        name: 'Algernon',
+                        location: 'St. Gallen',
+                        favoriteActivity: 'Yoga'
+                    },
+                    {
+                        name: 'Floppy',
+                        location: 'Göttingen',
+                        favoriteActivity: 'Yoga'
+                    },
+                    {
+                        name: 'Niemand',
+                        location: 'Sursee',
+                        favoriteActivity: 'Drinking'
+                    },
+                    {
+                        name: 'Fober',
+                        location: 'Göttingen',
+                        favoriteActivity: 'Drinking'
+                    }
+                ]
+                const rabbitFilter = array => key => value => array.filter(x => x[key] === value);
+                const filterRabbits = rabbitFilter(moreRabbits);
+                const filterRabbitsByLocation = filterRabbits('location');
+                const filterRabbitsByGoettingen = filterRabbitsByLocation('Göttingen');
+                // console.log(filterRabbitsByGoettingen);
+                const filterRabbitsByFavoriteActivity = filterRabbits('favoriteActivity');
+                const filterRabbitsByYoga = filterRabbitsByFavoriteActivity('Yoga');
+                const filterRabbitsByDrinking = filterRabbitsByFavoriteActivity('Drinking');
+                // console.log(filterRabbitsByYoga);
+                const sortArrayByValue = sortArray => sortKey => sortArray.sort((a, b) => {
+                    if(a[sortKey] < b[sortKey]) { return -1; }
+                    if(a[sortKey] > b[sortKey]) { return 1; }
+                    return 0;
+                })
+                const sortDrinking = sortArrayByValue(filterRabbitsByDrinking);
+                const sortDrinkingByName = sortDrinking('name');
+                // console.log(sortDrinkingByName);
+            </script>
+        </article>
+
+        <article id="hoisting" class="intersection">
+            <h2>hoisting</h2>
+            <pre class="code-block"><code>// console.log(hoisted); // undefined
+var hoisted = 'hoisted';
+
+// console.log(notHoisted); // reference error
+const notHoisted = 'not hoisted';
+
+// console.log(doSomething); // works; hoisted
+// doSomething(); // works; hoisted
+//function declaration
+function doSomething() {
+    console.log(miez);
+}
+
+// console.log(something); // reference error
+// something(); // reference error
+//function expression
+const something = function() {
+    console.log(wuff);
+}</code></pre>
+            <script>
+                // console.log(hoisted); // undefined
+                var hoisted = 'hoisted';
+
+                // console.log(notHoisted); // reference error
+                const notHoisted = 'not hoisted';
+
+                // console.log(doSomething); // works; hoisted
+                // doSomething(); // works; hoisted
+                //function declaration
+                function doSomething() {
+                    console.log(miez);
+                }
+
+                // console.log(something); // reference error
+                // something(); // reference error
+                //function expression
+                const something = function () {
+                    console.log(wuff);
+                } 
+            </script>
+        </article>
+
+        <article id="eventloopmemorydesign" class="intersection">
+            <h2>concurrency model</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-concurrency-model-and-event-loop" target="_blank" rel="noopener noreferrer">concurrency model & event loop</a> | heap | call stack | </p>
+            <h2>memory management</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-intro-to-memory-management" target="_blank" rel="noopener noreferrer">memory management</a></p>
+            <h2>debugging memory issues</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-debugging-memory-issues" target="_blank" rel="noopener noreferrer">debugging memory issues</a></p>
+            <h2>design patterns</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/articles/javascript-design-patterns" target="_blank" rel="noopener noreferrer">design patterns</a></p>
+            <h2>next steps</h2>
+            <p><a href="https://www.codecademy.com/courses/learn-intermediate-javascript/informationals/learn-intermediate-javascript-next-steps" target="_blank" rel="noopener noreferrer">next steps</a>: react, node.js, js unit testing</p>
+        </article>
+
+
     </main>
 
     <footer id="footer">
