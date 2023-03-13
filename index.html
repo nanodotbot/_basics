@@ -533,30 +533,29 @@ const ternary = i ? console.log(i) : console.log(j);</code></pre>
         <article id="arrays" class="intersection">
             <h2>arrays</h2>
             <p><a href="https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-arrays/cheatsheet"
-                    target="_blank" rel="noopener noreferrer">arrays</a> | let, const | length | .push() | .pop() |
-                .join() | .slice() | .splice() | .some() | .every() | <a
+                    target="_blank" rel="noopener noreferrer">arrays</a> | let, const | .length | array[0] | array[array.length - 1] | array.at(-1) | .push(item1, item2) : adds item(s) at end of array, mutator method: modifies original array, returns new length of array | .pop() : remove last item, mutates original array, returns popped item |
+                .join() | .slice(index1, index2) : returns array from index1 up to not including index2, not modifying original array, without argument complete array is returned | .splice(index, numberofitems, itemtoinsert1, itemtoinsertx) : removes starting from index (pos or neg) numberofitems items, inserts itemtoinsert1, itemtoinsertx, returns removed items | .some(element => condition) | .every(element => condition) | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/shift" target="_blank"
-                    rel="noopener noreferrer">.shift()</a> | <a
+                    rel="noopener noreferrer">.shift()</a> : remove first item, modifies original array, returns removed item | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/unshift" target="_blank"
-                    rel="noopener noreferrer">.unshift()</a> | .concat() | <a
+                    rel="noopener noreferrer">.unshift()</a> : add item(s), mutator, returns length | array1.concat(array2, array3) -- array1.concat(value1, value2) -- .concat(array1, value1, value2) | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/indexOf" target="_blank"
                     rel="noopener noreferrer">.indexOf()</a> | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/filter" target="_blank"
-                    rel="noopener noreferrer">.filter((element, index) => {})</a> | <a
+                    rel="noopener noreferrer">.filter(element => condition)</a> : returns new array that fullfills condition (return true) | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/find" target="_blank"
-                    rel="noopener noreferrer">.find(element => element )</a> | <a
+                    rel="noopener noreferrer">.find(element => element === value)</a> | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/findIndex" target="_blank"
-                    rel="noopener noreferrer">.findIndex((element, index, array) => {...});</a> | <a
+                    rel="noopener noreferrer">.findIndex(value);</a>: returns index or -1 | .findIndex(value, 3): returns index of value at index 3 or later | .lastIndexOf(value) | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/forEach" target="_blank"
                     rel="noopener noreferrer">.forEach((value, index, array) => {...});</a> | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/includes" target="_blank"
-                    rel="noopener noreferrer">.includes(value, index=0);</a> | <a
+                    rel="noopener noreferrer">.includes(value, index);</a>: returns true if value at index or later | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/map" target="_blank"
-                    rel="noopener noreferrer">.map((element, index, array) => {...});</a> | <a
+                    rel="noopener noreferrer">.map(element => return whatever);</a> : returns new array modified by function : function whatever(element) { if (element === a) { return x } else if (element === b) { return y } else { return z }} | <a
                     href="https://www.codecademy.com/resources/docs/javascript/arrays/reduce" target="_blank"
-                    rel="noopener noreferrer">.reduce((accumulator, currentValue, index, array) => {...},
-                    initialValue)</a> | <a href="https://www.codecademy.com/resources/docs/javascript/arrays/sort"
-                    target="_blank" rel="noopener noreferrer">.sort()</a> | arrays & functions | nested arrays</p>
+                    rel="noopener noreferrer">array.reduce((total, currentValue, currentIndex, arr) => total + currentValue, initialValue)</a> : reduces the array down to a single value e. g. array.reduce((totel, current) => total + current); -- function whatever(total, current) { if([1, 2, 3, 4].includes(current)) {return total + 1} else if (current === 5) { return total + 2 } else { return total + 3; } } | <a href="https://www.codecademy.com/resources/docs/javascript/arrays/sort"
+                    target="_blank" rel="noopener noreferrer">.sort()</a> : mutator, returns same sorted array | custom sorting with function added to sort: .sort(reverseSort) - function reverseSort(a, b) { if (a > b) return -1; if (a < b) return -1; return 0; } -- .sort(rainbowSort) - function rainbowSort(a, b) { let colors = ['red', 'orange', 'yellow', 'green' , 'blue', 'purple']; if (colors.indexOf(a) < colors.indexOf(b)) return -1; if (colors.indexOf(a) > colors.indexOf(b)) return 1; return 0; } | ,sort().reverse() : reverse sort | .fill()  | copyWithin(positionindex, fromindex, stopindex) : copies array to positionindex from fromindex to stopindex | .flat() : returns unnested array from nested one - flattens 1 level deep without argument : [a, b, [c, d]] results in [a, b, c, d] : special: .flat(Infinity) | combine array methods | arrays & functions | nested arrays</p>
 
             <pre class="code-block"><code>let rabbits = ['Algernon', 12, 'Floppy', 9, 'Niemand', 11]; // let
 
